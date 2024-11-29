@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Plurish.Auth.Domain.Entities;
+﻿namespace Plurish.Auth.Domain.Entities;
 public class EntityBase
 {
     public Guid Id { get; } = Guid.NewGuid();
