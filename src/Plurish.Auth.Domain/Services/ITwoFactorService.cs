@@ -2,6 +2,6 @@
 public interface ITwoFactorService
 {
     string GenerateCode();
-    bool VerifyCode(string providedCode, string expectedCode, DateTime expirationTime);
+    bool VerifyCode(string providedCode, string expectedCode);
 }
 
