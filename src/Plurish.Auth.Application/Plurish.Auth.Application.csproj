@@ -7,17 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UseCases\Users\LogOut\**" />
+    <EmbeddedResource Remove="UseCases\Users\LogOut\**" />
+    <None Remove="UseCases\Users\LogOut\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Plurish.Auth.Domain\Plurish.Auth.Domain.csproj" />
     <ProjectReference Include="..\Plurish.Auth.Infrastructure\Plurish.Auth.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="UseCases\Logout\" />
-    <Folder Include="UseCases\ForgotPassword\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 
 </Project>
